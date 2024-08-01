@@ -16,7 +16,7 @@ const Weather = ({ data }) => {
           />
           <p className="text-2xl">{data.weather[0].main}</p>
         </div>
-        <p className="text-9xl">{data.main.temp.toFixed(0)}& #176;</p>
+        <p className="text-9xl">{data.main.temp.toFixed(0)}&deg;</p>
       </div>
       {/* Bottom */}
 
@@ -24,8 +24,7 @@ const Weather = ({ data }) => {
         <p>Weather in {data.name}</p>
         <div>
           <div>
-            <p>{data.main.feels_like.toFixed(0)}& #176;</p>
-            
+            <p>{data.main.feels_like.toFixed(0)}&deg;</p>
           </div>
         </div>
       </div>
